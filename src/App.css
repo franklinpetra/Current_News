@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+  color: rgb(57, 20, 20);
+}
+/* .App p {
+  font-size: medium;
+  margin:-1% 0% 3% 0%; 
+  color: rgb(57, 20, 20); 
+  width:70%;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.alanLogo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  opacity: 0.7;
+  margin: 5% 6% 0% 0%;
+  border-radius: 8px;
+  /* animation: mymove infinite 20s linear;
+  animation-direction: alternate; */
+} 
+@keyframes mymove {
+  0%   {border: red; right: 0px; top: 0px;}
+  25%  {border: yellow; right: 100px; top: 0px;}
+  50%  {border: blue; right: 100px; top: 100px;}
+  75%  {border: green; right: 0px; top: 100px;}
+  100% {border: red; right: 0px; top: 0px;}
+}
+
+.newsLogo {
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  width: 150px;
+  margin: 3% 0% 6% 0%;
+  margin-left: 6%;
+  border-radius: 8px;
+  animation: mymove infinite 20s linear;
+  animation-direction: alternate;
+} 
+@keyframes mymove {
+  0%   {background: red; right: 0px; top: 0px;}
+  25%  {background: yellow; right: 100px; top: 0px;}
+  50%  {background: blue; right: 100px; top: 100px;}
+  75%  {background: green; right: 0px; top: 100px;}
+  100% {background: red; right: 0px; top: 0px;}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.image{
+  width:30%;
+  margin: -10% 0% -6% 0%;
+  mix-blend-mode: multiply;
+}
+
+.App-header {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(14px + 2vmin);
+  color: brown;
+  margin:0% 0% 0% 0%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: xx-small;
+  color: rgb(57, 20, 20);
+  width:70%;
+  position:fixed;
+  bottom: 0;
+  width: 700px;
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px; */
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 3%;
+  color: rgb(57, 20, 20);
+  text-align: center;
+}

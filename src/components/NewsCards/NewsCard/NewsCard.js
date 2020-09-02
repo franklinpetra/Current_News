@@ -1,5 +1,11 @@
 import React, { useState, useEffect, createRef } from 'react';
-import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
 import classNames from 'classnames';
 import useStyles from './styles';
 
@@ -7,6 +13,8 @@ const NewsCard = ({ article: { description, publishedAt, source, title, url, url
     const classes = useStyles();
     const [elRefs, setElRefs] = useState([]);
     const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50);
+
+
 
     useEffect(() => {
         window.scroll(0, 0);
@@ -33,11 +41,13 @@ const NewsCard = ({ article: { description, publishedAt, source, title, url, url
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.cardActions}>
-                <Button style="Button" size="small" color="success" href={url}>Learn More</Button>
+                <Button className={classes.button} href={url}>Learn More</Button>
                 <Typography variant="h5" color="textSecondary" component="h2">{i + 1}</Typography>
             </CardActions>
         </Card>
     );
 };
-
+// style={{size:"small", color:"success"}} 
 export default NewsCard;
+
+

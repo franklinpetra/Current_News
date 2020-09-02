@@ -8,11 +8,11 @@ export default makeStyles({
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '80%',
-        height: '45vh',
+        height: '30vh',
         padding: '10%',
         borderRadius: 10,
         color: 'white',
-        fontSize:".40em",
+        fontSize:".25em",
         },
 
     infoCard: {

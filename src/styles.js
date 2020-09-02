@@ -57,40 +57,4 @@ export default makeStyles((theme) => ({
             flexDirection: 'column',
         },
     },
-    // .App {
-    //     text-align: center;
-    //   }
-    
-    //   .App-logo {
-    //     height: 40vmin;
-    //     pointer-events: none;
-    //   }
-    // logoContainer: {
-    //     textAlign: 'center',
-    //     border: "2px solid brown",
-    //     padding: "10px",
-    //     borderRadius: "25px",
-    //     // padding: '0 5%',
-    //     // display: 'flex',
-    //     justifyContent: 'flex-start',
-    //     height: '25vmin',
-    //     width:"29vmin",
-    //     alignItems: 'center',
-    //     width: '25%',
-    //     [theme.breakpoints.down('sm')]: {
-    //         flexDirection: 'column-reverse',
-    //         textAlign: 'center',
-    //     },
-    // },
-    
-    
-    // alanLogo: {
-    //     height: '25vmin',
-    //     borderRadius: '%',
-    //     padding: '0 5%',
-    //     margin: '0% 0% 1.5% 0%',
-    //     [theme.breakpoints.down('sm')]: {
-    //         height: '25vmin',
-    //     },
-    // },
 }));

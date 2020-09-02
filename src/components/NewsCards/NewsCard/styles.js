@@ -43,4 +43,9 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
     },
+
+    button:{
+        size:"small",
+        backgroundColor :"lightGreen",
+    }
 });

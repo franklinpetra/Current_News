@@ -10,6 +10,8 @@ import image2 from "./assets/img/imagesfrontpage.jpg";
 
 
 // const alanKey = "0f1af5b52f2a6e90a6bb2899427cfda32e956eca572e1d8b807a3e2338fdd0dc/stage";
+// const News API_KEY = "3ef8500dc4264ff186f1f7173c54f8f3";
+
 const App = () => {
   const [newsArticles,setNewsArticles] = useState([]);
   const [activeArticle, setActiveArticle] = useState(0);
@@ -32,12 +34,12 @@ const App = () => {
           const article = articles[parsedNumber - 1];
 
           if (parsedNumber > 20) {
-            alanBtn().playText('Please try that again...');
+            alanBtn().playText('Something went wrong. Please ask again...');
           } else if (article) {
             window.open(article.url, '_blank');
             alanBtn().playText('Opening...');
           } else {
-            alanBtn().playText('Please try that again...');
+            alanBtn().playText('Something went wrong. Please ask again...');
           }
         }
       },
@@ -50,9 +52,9 @@ const App = () => {
         <header className="App-header">
           <img src={image}  className="image" alt="women reading news" />
           <p>
-            Application Using Alan AI to enable <br />Voice Controlled Current News Queries
+            Voice Controlled News App<br/>
           </p>
-          <p style={{fontSize:"large", margin:"-1% 0% 3% 0%", color: "# (57, 20, 20)", width:"70%"}}>Users can interact with a news API via voice commands and have the news read back to them by Alan AI.</p>
+          <p style={{fontSize:"large", margin:"-1% 0% 3% 0%", color: "# (57, 20, 20)", width:"70%"}}>Users can interact with a news API via conversation voice commands and the news will be read back to them by Alan AI.</p>
         </header>
       </div>
 
@@ -73,7 +75,7 @@ const App = () => {
           <Typography variant="body1" component="h2" >
             {/* Created by */}
             {/* <a className={classes.link}  href="https://www.linkedin.com/in/petra-franklin/"> Petra Franklin</a> <br/> 
-            This app is based on a superb tutorial by <a href="https://linktr.ee/javascriptmastery">Alan Hajdin</a>  who explains the awesome AI interface called <a href="https://alan.app">Alan AI</a>!  It used React, Mongoose, Express, Node, Material-UI, newsapi.org and WordsToNumbers.  
+            This app is based on a superb tutorial by <a href="https://linktr.ee/javascriptmastery">Alan Hajdin</a>  who explains the awesome AI interface called <a href="https://alan.app">Alan AI</a>!  It uses React, Mongoose, Express, Node, Material-UI, newsapi.org and WordsToNumbers.  
             <br></br>Notes: After clicking on the microphone, you can ask for headlines, or specific categories, such as technology news, or you can use terms, such as a person's name, or you can ask for specific news providers, such as CNN, Wired, NYTs, or the BBC. Enjoy! */}
           </Typography>
         </div>
